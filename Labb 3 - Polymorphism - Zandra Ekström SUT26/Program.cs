@@ -26,8 +26,8 @@ namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26
 
                 // Gettype sees that the object is a circle, square or rectangle
                 // and the variable Geometry dosen´t change the object.
-                //I am using Math.Round instead of F2 because F2 always show 2 decimals,
-                //but Math.Round rounds off to maximum 2 decimals.
+                // I am using Math.Round instead of F2 because F2 always show 2 decimals,
+                // but Math.Round rounds off to maximum 2 decimals.
                 Console.WriteLine($"Area of {shape.GetType().Name}: {Math.Round(shape.Area(), 2)}");
             }
 
