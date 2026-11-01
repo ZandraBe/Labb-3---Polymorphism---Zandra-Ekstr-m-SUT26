@@ -4,12 +4,20 @@ using System.Text;
 
 namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
 {
-    internal class Rectangle : Geometry
+    public class Rectangle : Geometry
     {
-        // En unik egenskap
+        public double Width { get; set; }
+        public double Height { get; set; }
 
-        // Constructor
+        public Rectangle(double width, double height)
+        {
+            Width = width;
+            Height = height;
+        }
 
-        // Override Area-metoden. längd * bredd
+        public override double Area()
+        {
+            return Width * Height;
+        }
     }
 }

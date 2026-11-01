@@ -4,12 +4,18 @@ using System.Text;
 
 namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
 {
-    internal class Square : Geometry
+    public class Square : Geometry
     {
-        // En unik egenskap
+        public double Side { get; set; }
 
-        // Constructor
+        public Square(double side)
+        {
+            Side = side;
+        }
 
-        // Override Area-metoden. sida * sida 
+        public override double Area()
+        {
+            return Side * Side;
+        }
     }
 }

@@ -4,9 +4,13 @@ using System.Text;
 
 namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
 {
-    internal class Geometry
+    public abstract class Geometry
     {
-        //Area Method = double
+
+        public abstract double Area();
+        
+         
+        
 
     }
 }

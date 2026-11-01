@@ -4,14 +4,18 @@ using System.Text;
 
 namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
 {
-    internal class Circle : Geometry
+    public class Circle : Geometry
     {
+        public double Radius { get; set; }
 
-        // En unik egenskap
+        public Circle(double radius)
+        {
+            Radius = radius;
+        }
 
-        // Constructor
-
-        // Override Area-metoden. π × radie²
-
+        public override double Area()
+        {
+            return Math.PI * Radius * Radius;
+        }
     }
 }
