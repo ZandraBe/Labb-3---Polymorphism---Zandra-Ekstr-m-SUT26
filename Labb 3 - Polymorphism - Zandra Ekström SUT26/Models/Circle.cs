@@ -8,11 +8,16 @@ namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
     {
         public double Radius { get; set; }
 
-        public Circle(double radius)
+        public Circle()
         {
-            Radius = radius;
+            Radius = 4;
         }
 
+
+        // Override replaces the parentclass method geometry Area().
+        // Every shape needs a different version since
+        // the area is calculated differently for different shapes.
+     
         public override double Area()
         {
             return Math.PI * Radius * Radius;

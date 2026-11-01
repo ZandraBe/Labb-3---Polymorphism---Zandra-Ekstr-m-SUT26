@@ -8,11 +8,13 @@ namespace Labb_3___Polymorphism___Zandra_Ekström_SUT26.Models
     {
         public double Side { get; set; }
 
-        public Square(double side)
+        public Square()
         {
-            Side = side;
+            Side = 8;
         }
 
+
+        // To calculate the area of a square: side * side.
         public override double Area()
         {
             return Side * Side;
